@@ -75,9 +75,9 @@ const CandidateProfile = ({ rowId, handleClick, assignmentData }) => {
             </div>
           )}
         </div>
-        {assignmentData[rowId - 1].scores == null ? (
+        {assignmentData && assignmentData[rowId - 1].scores == null ? (
           <div>
-            <div></div>
+            <div>No Comunication and Other Scores</div>
           </div>
         ) : (
           <h2>
@@ -86,14 +86,14 @@ const CandidateProfile = ({ rowId, handleClick, assignmentData }) => {
         )}
 
 <div className={styles.aboutDiv}>
-  {assignmentData[rowId - 1]?.about_me != null && (
+  {assignmentData && assignmentData[rowId - 1]?.about_me != null && (
     <div className={styles.section}>
       <h2 className={styles.headers}>About</h2>
       <p>{assignmentData[rowId - 1]?.about_me}</p>
     </div>
   )}
   
-  {assignmentData[rowId - 1]?.experience != null && (
+  {assignmentData && assignmentData[rowId - 1]?.experience != null && (
     <div className={styles.section}>
       <h2 className={styles.headers}>Experience</h2>
       <p>{assignmentData[rowId - 1]?.experience}</p>
@@ -107,7 +107,7 @@ const CandidateProfile = ({ rowId, handleClick, assignmentData }) => {
     </div>
   )}
 
-  {assignmentData[rowId - 1]?.introduction != null && (
+  {assignmentData && assignmentData[rowId - 1]?.introduction != null && (
     <div className={styles.section}>
       <h2 className={styles.headers}>Introduction</h2>
       <p>{assignmentData[rowId - 1]?.introduction}</p>
