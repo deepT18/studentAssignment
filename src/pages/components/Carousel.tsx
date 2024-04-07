@@ -17,7 +17,7 @@ function SimpleSlider() {
     adaptiveHeight: true,
     nextArrow: <CustomArrow type="next" />,
     prevArrow: <CustomArrow type="prev" />,
-    customPaging: function (i) {
+    customPaging: function () {
       return (
         <div
           className={`${styles.dot} slick-dots`}
