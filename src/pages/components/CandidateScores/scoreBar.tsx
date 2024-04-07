@@ -1,6 +1,6 @@
 import React from "react";
-import Stack from "@mui/joy/Stack";
-import LinearProgress from "@mui/joy/LinearProgress";
+// import Stack from "@mui/joy/Stack";
+// import LinearProgress from "@mui/joy/LinearProgress";
 import styles from "../../../styles/BodyContent.module.css";
 import ScoreRow from "../ScoreRow";
 

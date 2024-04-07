@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import InfoRow from "../components/assignmentSection/InfoRow";
-import InformationRow from "./CandidateScores/InformationRow";
+// import InfoRow from "../components/assignmentSection/InfoRow";
+// import InformationRow from "./CandidateScores/InformationRow";
 import styles from "../../styles/BodyContent.module.css";
 import { Button } from "@mui/material";
 import ScoreBar from "../components/CandidateScores/scoreBar";

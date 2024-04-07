@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import InfoRow from "./InfoRow";
 import styles from "../../../styles/BodyContent.module.css";
-import { Typography } from "@mui/material";
-import { format, parse } from "date-fns";
-import reviewImg from "../../../../public/to_review.png";
+// import { Typography } from "@mui/material";
+// import { format, parse } from "date-fns";
+// import reviewImg from "../../../../public/to_review.png";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import Button from "@mui/material/Button";
 import ViewListIcon from "@mui/icons-material/ViewList";
