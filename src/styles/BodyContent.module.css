@@ -62,7 +62,7 @@
     margin-left: 50px;
     background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 
 }
@@ -142,12 +142,12 @@
   }
  
   .arrow {
-    width: px;
-    height: px;
+    /* width: px;
+    height: px; */
     border-radius: 50%;
     
-    background-color: grey;
-    /* color: black; */
+    /* background-color: rgba(128, 128, 128, 0.034); */
+    color: black;
     display: flex;
     justify-content: center;
     align-items: baseline;
