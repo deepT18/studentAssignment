@@ -1,8 +1,8 @@
 import Image from "next/image";
 import avatarimg from "../../../../public/avatar.png";
 import styles from "../../../styles/BodyContent.module.css";
-import CandidateProfile from "../CandidateProfile";
-import { constants } from "perf_hooks";
+// import CandidateProfile from "../CandidateProfile";
+// import { constants } from "perf_hooks";
 
 // @ts-ignore
 const InformationRow = ({handleClick, id, name, email, score }) => {
