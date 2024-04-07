@@ -9,7 +9,7 @@ import avatarimg from "../../../public/avatar.png";
 // import SwiperComponent from "../components/swiper";
 import Carousel from "../components/Carousel";
 
-
+// @ts-ignore
 const CandidateProfile = ({ rowId, handleClick, assignmentData }) => {
   
   return (
