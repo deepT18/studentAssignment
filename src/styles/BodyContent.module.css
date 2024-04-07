@@ -1,0 +1,239 @@
+.body_content{
+    display: flex;
+}
+.assignmentDetails{
+    /* border: 2px solid grey; */
+    font-size: 10px;
+    width: 25%;
+    padding: 10px;
+    /* margin:10px 15px 0px 0px; */
+}
+.status{
+    font-size: 12px;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+.btnDiv{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rowComponent{
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    /* font-size: 25px; */
+}
+.profileContainer{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    width: 10%;
+    /* font-size: 200px; */
+
+}
+.profile{
+    width: 58%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* font-size: "250px"; */
+    margin-left:10px ;
+}
+.videoComponent{
+    /* flex-grow: 1; */
+    width:30%;
+    height:40%;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.headers{
+    font-size: 10px;
+    font-weight: bold;
+}
+.aboutDiv{
+    padding :"10px";
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 10px;
+}
+.scoreContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.scoreRow{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.aboutDiv {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+  }
+.section{
+    margin-bottom: 15px;
+}
+.questionContainer{
+    width: 30%;
+}
+
+
+.questionComponent{
+    height: 300px;
+}
+
+  /* Styles for avatar image */
+  .avatar {
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 10px; /* Add margin for spacing */
+    
+  }
+  
+
+
+
+  .swiper-container {
+    height: 200px;
+    width: 100px;
+    list-style: none;
+  }
+  
+  .pagination {
+    bottom: 0;
+    padding-bottom: 4px;
+  }
+
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* background-color: red; */
+    left: 0;
+    z-index: 1;
+    /* color: black; */
+  }
+ 
+  .arrow {
+    width: px;
+    height: px;
+    border-radius: 50%;
+    
+    background-color: grey;
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  
+  .arrow-next {
+    right: 0;
+    /* background-color: black; */
+  }
+  
+  .arrow-prev {
+    left:0;
+  }
+  .sliderContainer{
+    /* height: 100%; */
+    /* margin-left: 40px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border-radius: 10px; */
+    /* padding:10px; */
+    width:100%;
+    
+  }
+
+  .image {
+    object-fit:fill; 
+    width: 100%;
+    height: 100%; 
+  }
+  .slide{
+    display: flex;
+    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
+    height:auto;
+    width: auto;
+    /* border-radius:10px; */
+
+  }
+.textCount{
+    font-size: 14px;
+    height:40px;
+    display: flex;
+    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
+    background-color: #171d2e;
+    color: aliceblue;
+}
+.count{
+    font-size: 10px;
+    font-weight: bold;
+}
+.slick-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: red; */
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .slick-prev {
+    background-color: black; /* Set button background color to black */
+    /* Optionally, you can adjust other styles as needed */
+  
+
+.slick-prev {
+  left: 0;
+  background-color: black;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.carouselContainer {
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    /* padding: 5px; */
+  }
+  
