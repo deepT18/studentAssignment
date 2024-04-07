@@ -49,7 +49,7 @@ const CandidateAndScore = ({handleClick,assignmentData}) => {
     <div style={{marginBottom: "20px", paddingRight:"20px"}}>
       <InfoRow title="CANDIDATE" value="SCORE"/>
       {assignmentData &&
-        assignmentData.map((candidate) => (
+        assignmentData.map((candidate: { id: React.Key | null | undefined; full_name: any; email: any; score: any; }) => (
           <div key={candidate.id}>
             <InformationRow handleClick={handleClick} id={candidate.id} name={candidate.full_name}  email={candidate.email}  score={candidate.score} />
           </div>
