@@ -1,19 +1,25 @@
-// @ts-ignore
 import React, { useEffect, useState } from "react";
 import InfoRow from "./InfoRow";
 import styles from "../../../styles/BodyContent.module.css";
-// import { Typography } from "@mui/material";
-// import { format, parse } from "date-fns";
-// import reviewImg from "../../../../public/to_review.png";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import Button from "@mui/material/Button";
 import ViewListIcon from "@mui/icons-material/ViewList";
 import CandidateAndScore from "../CandidateScores/candidateScore";
 
+interface AssignmentData {
+  title: string;
+  status: string;
+  link: string;
+  duration_in_seconds: number;
+}
 
-// @ts-ignore
-const AssignmentDetails = ({handleClick, assignmentData}) => {
-  const [assignment, setAssignment] = useState(null);
+interface AssignmentDetailsProps {
+  handleClick: (id: any) => void;
+  assignmentData: AssignmentData | null;
+}
+
+const AssignmentDetails: React.FC<AssignmentDetailsProps> = ({ handleClick, assignmentData }) => {
+  const [assignment, setAssignment] = useState<AssignmentData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,8 +65,8 @@ const AssignmentDetails = ({handleClick, assignmentData}) => {
 
           <InfoRow
             title="Assignment Hour"
-            value={`${durationInHours} ${
-              durationInHours > 1 ? "hours" : "hour"
+            value={`${durationInHours !== null ? durationInHours : ''} ${
+              durationInHours !== null && durationInHours > 1 ? "hours" : "hour"
             }`}
           />
 
@@ -94,7 +100,7 @@ const AssignmentDetails = ({handleClick, assignmentData}) => {
           <strong>SHORTLISTED</strong>
         </Button>
       </div>
-      <CandidateAndScore handleClick={handleClick} assignmentData={assignmentData}/>
+      <CandidateAndScore handleClick={handleClick} assignmentData={assignmentData} />
     </div>
   );
 };
