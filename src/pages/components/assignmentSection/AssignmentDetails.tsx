@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useEffect, useState } from "react";
 import InfoRow from "./InfoRow";
 import styles from "../../../styles/BodyContent.module.css";
@@ -9,14 +10,9 @@ import Button from "@mui/material/Button";
 import ViewListIcon from "@mui/icons-material/ViewList";
 import CandidateAndScore from "../CandidateScores/candidateScore";
 
-interface ScoreRowProps {
-  title: string;
-  score: number;
-  handleClick: () => void;
-  assignmentData: any;
-}
 
-const AssignmentDetails: React.FC<ScoreRowProps> = ({handleClick, assignmentData}) => {
+// @ts-ignore
+const AssignmentDetails = ({handleClick, assignmentData}) => {
   const [assignment, setAssignment] = useState(null);
 
   useEffect(() => {

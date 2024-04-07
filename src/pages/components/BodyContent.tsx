@@ -3,26 +3,24 @@ import SideBar from "./sidebar/sideBar";
 import AssignmentDetails from "./assignmentSection/AssignmentDetails";
 import styles from "../../styles/BodyContent.module.css"
 import CandidateProfile from "./CandidateProfile";
+
 const BodyContent = () => {
-
-
-  const [flag,setFlag] = useState(false);
-  const [rowId,setRowId] = useState(null);
+  const [flag, setFlag] = useState(false);
+  const [rowId, setRowId] = useState(null);
   const [assignmentData, setAssignmentData] = useState(null);
   const [assignmentDataId1, setAssignmentDataId1] = useState(null);
 
   interface ScoreRowProps {
-    id:number;
+    id: number;
   }
 
-  const handleClick: React.FC<ScoreRowProps> = (id) =>{
+  const handleClick = (id: ScoreRowProps) => {
     console.log("Clicked");
+    // @ts-ignore
     setRowId(id);
     setFlag(true);
   }
 
-
- 
   useEffect(() => {
     const fetchData = async () => {
       try {
