@@ -40,8 +40,8 @@ const AssignmentDetails: React.FC<AssignmentDetailsProps> = ({ handleClick, assi
     fetchData();
   }, []);
 
-  const durationInHours = assignmentData
-    ? Math.floor(assignmentData.duration_in_seconds / 3600)
+  const durationInHours = assignment
+    ? Math.floor(assignment.duration_in_seconds / 3600)
     : null;
 
   return (
