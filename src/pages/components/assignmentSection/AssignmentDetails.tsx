@@ -9,7 +9,14 @@ import Button from "@mui/material/Button";
 import ViewListIcon from "@mui/icons-material/ViewList";
 import CandidateAndScore from "../CandidateScores/candidateScore";
 
-const AssignmentDetails = ({handleClick, assignmentData}) => {
+interface ScoreRowProps {
+  title: string;
+  score: number;
+  handleClick: () => void;
+  assignmentData: any;
+}
+
+const AssignmentDetails: React.FC<ScoreRowProps> = ({handleClick, assignmentData}) => {
   const [assignment, setAssignment] = useState(null);
 
   useEffect(() => {

@@ -11,7 +11,11 @@ const BodyContent = () => {
   const [assignmentData, setAssignmentData] = useState(null);
   const [assignmentDataId1, setAssignmentDataId1] = useState(null);
 
-  const handleClick = (id) =>{
+  interface ScoreRowProps {
+    id:number;
+  }
+
+  const handleClick: React.FC<ScoreRowProps> = (id) =>{
     console.log("Clicked");
     setRowId(id);
     setFlag(true);
