@@ -6,8 +6,9 @@ import styles from "../../styles/BodyContent.module.css";
 import { Button } from "@mui/material";
 import ScoreBar from "../components/CandidateScores/scoreBar";
 import avatarimg from "../../../public/avatar.png";
-import SwiperComponent from "../components/swiper";
+// import SwiperComponent from "../components/swiper";
 import Carousel from "../components/Carousel";
+
 
 const CandidateProfile = ({ rowId, handleClick, assignmentData }) => {
   
