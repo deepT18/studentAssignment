@@ -1,5 +1,6 @@
 import React from "react";
 
+// @ts-ignore
 const InfoRow = ({ title, value }) => {
   return (
     <div

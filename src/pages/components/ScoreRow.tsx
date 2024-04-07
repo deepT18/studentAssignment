@@ -2,7 +2,7 @@ import LinearProgress from "@mui/joy/LinearProgress";
 import { Stack } from "@mui/material";
 import React from "react";
 import styles from "../../styles/BodyContent.module.css"
-
+// @ts-ignore
 const ScoreRow = ({ title, score }) => {
   return (
     <div className={styles.scoreRow}>

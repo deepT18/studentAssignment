@@ -40,7 +40,8 @@ function SimpleSlider() {
     "What is your favorite sport?",
     "What is your favorite thing to do on weekends?",
   ];
-
+  
+ // @ts-ignore
   function CustomArrow(props) {
     const { className, style, onClick } = props;
     return (

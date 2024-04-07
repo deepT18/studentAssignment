@@ -21,6 +21,7 @@ interface Score {
   max_score: number;
 }
 
+// @ts-ignore
 const CandidateAndScore = ({handleClick,assignmentData}) => {
   // const [candidateDetails, setCandidateDetails] = useState<Candidate[]>();
 

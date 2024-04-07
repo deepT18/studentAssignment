@@ -4,6 +4,7 @@ import LinearProgress from "@mui/joy/LinearProgress";
 import styles from "../../../styles/BodyContent.module.css";
 import ScoreRow from "../ScoreRow";
 
+// @ts-ignore
 const ScoreBar = ({ rowId, assignmentData }) => {
   return (
     <div>

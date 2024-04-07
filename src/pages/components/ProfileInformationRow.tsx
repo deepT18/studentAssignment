@@ -4,6 +4,7 @@ import styles from "../../../styles/BodyContent.module.css";
 import CandidateProfile from "../CandidateProfile";
 import { constants } from "perf_hooks";
 
+// @ts-ignore
 const InformationRow = ({handleClick, id, name, email, score }) => {
   
 
